@@ -1,6 +1,6 @@
 # scss-webpack
 
-The main purpose of this assignment is to create an HTML page with SCSS with the image provided to us.
+The main purpose is to create an HTML page with SCSS.
 Have used an external stylesheet for all the styling purpose.Have used CSS positioning, Grid layout, SCSS features like variables, mixins, inheritance, loops, functions, math operations to create a form that closely resembles the attached file.
 Used multiple scss constructs to organize the code.Added code documentation using comments.
 
