@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <head>
+      <title>Text Editor</title>
+<!--Stylesheet-->
+      <link rel = "stylesheet" type = "text/css" href = "style.css" />
+
+<h1 class="h1">TEXT EDITOR</h1>
+    </head>
+<body class="body1">
+<!-- The container for the entire text area -->
+<div class="container1">
+    <div class="editorbox">
+            <button id="Bold-Btn" >BOLD</button>
+            <button id="Italic-Btn" >ITALICS</button>
+            <button id="Underline-Btn" >UNDERLINE</button>
+            <button type="button" onclick="leftAlign()">LEFT ALIGN</button>
+            <button type="button" onclick="rightAlign()">RIGHT ALIGN</button>
+            <button type="button" onclick="justifyAlign()">JUSTIFY</button>
+    </div>
+ <!--Calling the javascript -->   
+    <script src="toolbar.js"></script>
+<br>
+<br>
+
+<!--Text area-->
+    <h2 >Enter any text below!!!!</h2>
+    <div id="text-editor" class="text-editor" contentEditable="true">Message over here!!!</div>
+  
+</div>
+
+</body>
+</html>

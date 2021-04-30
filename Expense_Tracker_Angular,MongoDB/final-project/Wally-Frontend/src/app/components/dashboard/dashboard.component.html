@@ -1,0 +1,139 @@
+<!-- Header consisting of all the navigation items  -->
+<app-header></app-header>
+
+<!-- Background image  -->
+<div class="bg-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/background.jpg');">
+
+<app-subheader *ngIf = "loggedInStatus"></app-subheader>
+<div class = "container">
+   <div class= "row">
+      <div class = "sidebar col-xs-4">
+         <table class="table">
+            <thead>
+               <tr class = "header">
+                  <th scope="col" >Account Summary</th>
+                  <th scope="col">${{totalBal}}</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class = "header">
+                  <td>Cash Balance</td>
+                  <td>${{totalCashBal}}</td>
+               </tr>
+               <tr  *ngFor = "let item of cashList">
+                  <td>{{item.bankName}}</td>
+                  <td>${{item.accBalance}}</td>
+               </tr>
+               <tr>
+                  <td colspan="2"><a class="nav-link new" [routerLink]="['/addAccount']"> + Add Bank Account</a></td>
+               </tr>
+               <tr class = "header">
+                  <td >Credit Balance </td>
+                  <td>${{totalCreditCardBal}}</td>
+               </tr>
+               <!-- <tr *ngIf="creditcardlist && creditcardlist.length > 0">
+                  <td *ngFor = "let item of creditcardlist">{{item.bankName}}</td>
+                  </tr> -->
+               <tr *ngFor = "let item of creditcardList">
+                  <td>{{item.bankName}}</td>
+                  <td >${{item.accBalance}}</td>
+               </tr>
+               <tr data-href="#">
+                  <td colspan="2"><a class="nav-link new" [routerLink]="['/addAccount']"> + Add Credit Card Account</a></td>
+               </tr>
+               <tr class = "header">
+                  <td >Investment Balance</td>
+                  <td>${{totalInvestmentBal}}</td>
+               </tr>
+               <tr  *ngFor = "let item of investmentList">
+                  <td>{{item.bankName}}</td>
+                  <td>${{item.accBalance}}</td>
+               </tr>
+               <tr data-href="#">
+                  <td colspan="2"><a class="nav-link new" [routerLink]="['/addAccount']"> +Link Investments</a></td>
+               </tr>
+               <tr class = "header">
+                  <td >Retirement Balance</td>
+                  <td>${{totalRetirementBal}}</td>
+               </tr>
+               <tr  *ngFor = "let item of retirementList">
+                  <td>{{item.bankName}}</td>
+                  <td>${{item.accBalance}}</td>
+               </tr>
+               <tr data-href="#">
+                  <td colspan="2"><a class="nav-link new" [routerLink]="['/addAccount']"> +Link Retirement Account</a></td>
+               </tr>
+               <tr class = "header">
+                  <td >Loan Balance</td>
+                  <td>${{totalLoanBal}}</td>
+               </tr>
+               <tr  *ngFor = "let item of loanList">
+                  <td>{{item.bankName}}</td>
+                  <td>${{item.accBalance}}</td>
+               </tr>
+               <tr data-href="#">
+                  <td colspan="2"><a class="nav-link new" [routerLink]="['/addAccount']"> +Link Loan or Mortgage</a></td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class = "billBar col-xs-8">
+         <div *ngIf = "!weHaveTransactions">
+               <label class = "textfield"><b> No Data Available</b></label>
+         </div>
+         <div *ngIf = "weHaveTransactions" class = "row twographs">
+
+            <div class = "col-md-6" >
+               <label class = "textfield"><b>Account Type Distribution</b></label>
+               <canvas baseChart
+               [data]="pieChartData"
+               [labels]="pieChartLabels"
+               [chartType]="pieChartType"
+               [colors]="pieChartColor">
+               </canvas>
+            </div>
+            <div class = "col-md-6">
+               <label class = "textfield" ><b>Yearly Investment Growth</b></label>
+               <canvas baseChart
+               [data]="lineChartData"
+               [labels]="lineChartLabels"
+               [chartType]="lineChartType"
+               [options]="lineChartOptions"
+               ></canvas>
+            </div>
+         </div>
+         <div *ngIf = "weHaveTransactions" class = "row-md-6 onegraphs ">
+            <label class = "text2"><b>Income vs Expenditure</b></label>
+            <div class = "col-md-12 barchart" >
+            <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [chartType]="barChartType"
+            [colors]="barChartColor"
+            ></canvas>
+          </div>
+         </div>
+         <div *ngIf = "dueBillsList" class = "col-xs-4 billdiv ">
+               <table class="table table-hover table-bordered ">
+                  <thead >
+                     <tr>
+                        <th class = "text3" colspan="2">Upcoming Credit Card Bills</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr class = "header">
+                        <td>Account</td>
+                        <td>Due Date</td>
+                     </tr>
+                     <tr *ngFor = "let item of dueBillsList">
+                        <td>{{item.bankName}} Credit Card</td>
+                        <td>{{item.billDueDate | date:'mediumDate'}}</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+      </div>
+   </div>
+</div>
+<!-- <app-piechart></app-piechart> -->
+<app-footer></app-footer>

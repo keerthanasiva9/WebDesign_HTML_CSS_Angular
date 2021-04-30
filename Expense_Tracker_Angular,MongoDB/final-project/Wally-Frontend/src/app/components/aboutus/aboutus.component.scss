@@ -1,0 +1,76 @@
+//Body for the About Us component
+body {
+    font-family: Segoe UI;
+    font-size: 10px;
+    background-color: #ffffff;
+  }
+  
+  p,a, h1{
+    font-family: Segoe UI;
+    color: #000000;
+  }
+  
+// image & formatting
+  #imageabt{
+    margin-top:3%;
+    width:700px;
+    height:100%;
+    }
+  
+    #left{
+      margin-top: -5%;
+    }
+  
+  #right {
+    margin-top: -28%;
+    margin-left: 47%;
+    }
+  
+   #container{
+    margin-left: 2%;
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #container{
+      display: block;
+       margin:0px;
+       width: 75%;
+          }
+          
+    #imageabt{
+        display: none;
+      }
+    
+    #right {
+      margin-top: 2%;
+      margin-left: 20%; 
+      }
+      
+      #left {
+        margin-top: -8%;
+        margin-left: 20%;
+        }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    #container{
+      display: block;
+       margin:0px;
+       width: 75%;
+          }
+          
+    #imageabt{
+        display: none;
+      }
+    
+    #right {
+      margin-top: 2%;
+      margin-left: 30%; 
+      }
+      
+      #left {
+        margin-left: 30%;
+        }
+  }
+  

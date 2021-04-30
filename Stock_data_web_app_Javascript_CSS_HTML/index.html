@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stock Data</title>
+    <!--External Stylesheets amd script-->
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://unpkg.com/@reactivex/rxjs@5.3.0/dist/global/Rx.js"></script>
+  </head>
+
+  <body>
+    <!-- Linked to the main javascript file-->
+    <div class="container">
+      <!--Label for user to enter stock symbols-->
+      <label for="stksymbol"><b>Stock Symbols :</b></label>
+      <!--Input text field for stock symbols-->
+      <input
+        type="text" class="stksymbol" id="stksymbolInput" name="stksymbolInput" placeholder="Enter the Stock Symbols over here!!!"/>
+      <!--Submit stock symbols to API-->
+      <input class="submitBtn" type="submit" value="Submit" />
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

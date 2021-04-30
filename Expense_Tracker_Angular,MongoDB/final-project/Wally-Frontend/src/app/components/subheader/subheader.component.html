@@ -1,0 +1,22 @@
+<nav class=" navbar navbar-expand-sm bg-light  ">
+  <div class="navbar-collapse" id="collapsibleNavbar">
+   <ul class="navbar-nav">
+     <li class="list-inline-item fav">
+       <i class="fas fa-file-invoice"></i>
+     </li>
+     <!--Sub header consisting of the overview, transaction, budget and credit score-->>
+     <li class="nav-item navbar-items">
+           <a class="nav-link" [routerLink]="['/dashboard']"><h5>Overview</h5></a>
+     </li>
+     <li class="nav-item navbar-items">
+       <a class="nav-link" [routerLink]="['/transaction']"><h5>Transaction</h5></a>
+     </li>
+     <li class="nav-item navbar-items">
+       <a class="nav-link" [routerLink]="['/budget']"><h5>Budget</h5></a>
+     </li>
+    <li class="nav-item navbar-items">
+       <a class="nav-link" [routerLink]="['/creditscore']"><h5>Credit Score</h5></a>
+     </li>
+   </ul>
+ </div>
+</nav>

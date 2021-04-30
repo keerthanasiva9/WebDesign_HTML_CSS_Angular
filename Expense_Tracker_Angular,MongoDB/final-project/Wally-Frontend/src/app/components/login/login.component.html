@@ -1,0 +1,28 @@
+<app-header></app-header>
+<!--images imported from pixabay-->
+<div class="bg-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/background.jpg');">
+  <!--../../assets/loginpage.jpg-->
+</div>
+    <div class ="bg-text" id="container">
+    <form #f="ngForm" (ngSubmit)="findUser(f.value)" class="label_userName">
+      <div class="form-group">
+        <label for="userName">Email</label>
+        <input class="form-control" type="text" autocomplete="off" name="userName" id="userName" [(ngModel)]="userName"/>
+      </div>
+      <br/>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input class="form-control" type="password" autocomplete="off" name="password" id="password" [(ngModel)]="password"/>
+      </div>
+      <br/>
+      <div class="reset">
+        <button type="submit" class="btn btn-primary">Login</button>
+       <a [routerLink]="['/resetpassword']"><button type="submit" class="btn btn-danger">Forgot Password</button></a>
+      </div>
+    </form>
+    </div>
+    <br>
+    <br>
+
+  <br/>
+  <app-footer></app-footer>

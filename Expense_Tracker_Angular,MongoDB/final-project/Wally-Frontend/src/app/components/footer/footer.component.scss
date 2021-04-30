@@ -1,0 +1,122 @@
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+  padding: 60px 0;
+}
+
+#parent {
+  display: flex;
+}
+section .section-title {
+  text-align: center;
+  color: #007b5e;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+#footer {
+  background: #4d4e4e !important;
+  width: 50%;
+  height:350px;
+}
+
+#footer1 {
+  background: #4d4e4e !important;
+  width: 50%;
+  height:350px;
+
+}
+#footer h5{
+
+  padding-left: 10px;
+  border-left: 3px solid #eeeeee;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  color:#ffffff;
+}
+
+#footer1 h4{
+
+  padding-left: 10px;
+  border-left: 3px solid #eeeeee;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  color:#ffffff;
+}
+#footer a {
+  color: #ffffff;
+  text-decoration: none !important;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+#footer1 a {
+  color: #ffffff;
+  text-decoration: none !important;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+  padding: 3px 0;
+  color: white;
+}
+#footer ul.social li a i {
+  margin-right: 5px;
+  color:mediumpurple;
+  font-size:25px;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+  padding-right: 15px;
+}
+
+
+#footer ul.social li:hover a i {
+  font-size:30px;
+  color:lightcoral;
+  margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+  color:#ffffff;
+}
+#footer ul.social li a:hover{
+  color:aquamarine;
+}
+#footer1 ul.quick-links li{
+  padding: 3px 0;
+  color:hotpink;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+#footer1 ul.quick-links li:hover{
+  padding: 3px 0;
+  margin-left:5px;
+  font-weight:700;
+  color:palevioletred;
+}
+#footer1 ul.quick-links li a i{
+  margin-right: 5px;
+  color:blueviolet;
+}
+#footer1 ul.quick-links li:hover a i {
+  font-weight: 700;
+  color:palevioletred;
+}
+@media (max-width:767px){
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+  }
+
+  .container{
+    width: 20%;
+    height:20%;
+    margin-left:30%;
+    margin-right:30%;
+    font-size:13px;
+    
+    }
+}

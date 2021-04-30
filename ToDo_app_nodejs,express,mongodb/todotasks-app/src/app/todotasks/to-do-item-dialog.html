@@ -1,0 +1,28 @@
+<div class="modalDialog">
+  <app-addtaskinput
+    #addtaskinput
+    className="addTaskModalWindowTextBox"
+  ></app-addtaskinput>
+  <app-adddescription #addtaskdescription></app-adddescription>
+  <div class="datetime">
+    Due Date
+    <input
+      type="date"
+      [(ngModel)]="dueDate"
+      [min]="currentDate"
+    />
+    Due Time
+    <input
+      type="time"
+      [(ngModel)]="dueTime"
+    />
+  </div>
+  <button class="add"
+    (click)="addToDoItem(addtaskinput,addtaskdescription,dueDate,dueTime)"
+  >
+    Add</button
+  >&nbsp;
+  <button class="cancel" (click)="closeModal()">
+    Cancel
+  </button>
+</div>

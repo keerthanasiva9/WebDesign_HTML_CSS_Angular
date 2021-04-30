@@ -1,0 +1,43 @@
+<div class="container">
+  <h1 style="text-align:center;"><b>To Do Checklist</b></h1>
+  <app-addtaskinput className="addTaskTextBox" #addtaskinput></app-addtaskinput>
+  &nbsp;
+  <button class="quickadd" (click)="addToDoItem(addtaskinput)">
+    <span>Quick Add</span></button
+  >&nbsp;
+
+  <button class="add" (click)="openModal('custom-modal-1')">
+    <span>Add an item</span></button
+  >&nbsp;
+  <button class="clearAll" (click)="clearAllToDoItems()">
+    <span>Delete all items</span>
+  </button>
+  <jw-modal (afterEditEvent)="afterEdit($event)" id="custom-modal-1">
+      <to-do-item-dialog
+        (addEvent)="
+          addToDoItemInfo(
+            $event.taskContent,
+            $event.taskDescription,
+            $event.dueDate,
+            $event.dueTime
+          )
+        "
+        (closeEvent)="closeModal('custom-modal-1')"
+      ></to-do-item-dialog>
+    </jw-modal>
+  
+  <div class="todolist">
+    <div *ngFor="let toDoItem of toDoItems">
+      <app-to-do-input-item
+        [content]="toDoItem.taskContent"
+        [status]="toDoItem.completed"
+        [dueDate]="toDoItem.dueDate"
+        [dueTime]="toDoItem.dueTime"
+        [id]="toDoItem.id"
+        (checkBoxEvent)="updateToDoItemStatus($event.status, $event.id)"
+        (editEvent)="editToDoItem(toDoItem)"
+        (deleteEvent)="deleteToDoItem($event)"
+      ></app-to-do-input-item>
+    </div>
+  </div>
+</div>

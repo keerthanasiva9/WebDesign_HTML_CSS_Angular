@@ -1,0 +1,41 @@
+﻿<div class="jw-modal">
+  <div class="jw-modal-body">
+    <div *ngIf="toDoItem == undefined"><ng-content></ng-content></div>
+
+    <div *ngIf="toDoItem != undefined" class="modalDialog">
+      <app-addtaskinput
+        [contentValue]="toDoItem.taskContent"
+        #addtaskinput
+        className="addTaskModalWindowTextBox"
+      ></app-addtaskinput>
+      <app-adddescription
+        [contentValue]="toDoItem.description"
+        #addtaskdescription
+      ></app-adddescription>
+      <div class="datetime">
+        Due Date
+        <input type="date" [(ngModel)]="toDoItem.dueDate" [min]="currentDate" />
+        Due Time
+        <input type="time" [(ngModel)]="toDoItem.dueTime" />
+      </div>
+      <button
+        class="add"
+        (click)="
+          editToDoItem(
+            toDoItem.id,
+            addtaskinput.contentValue,
+            addtaskdescription.contentValue,
+            toDoItem.dueDate,
+            toDoItem.dueTime
+          )
+        "
+      >
+        Edit</button
+      >&nbsp;
+      <button class="cancel" (click)="closeModal()">
+        Cancel
+      </button>
+    </div>
+  </div>
+</div>
+<div class="jw-modal-background"></div>

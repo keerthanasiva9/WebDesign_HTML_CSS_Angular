@@ -1,0 +1,137 @@
+
+.maverickslogo{
+    height: 60px;
+  }
+
+.logo{
+    height: 150%;
+  }
+
+.wally{
+    width:200px;
+    height:50px;
+}
+
+
+  .bg-light {
+   background-color: rgb(194, 26, 26) !important;
+  }
+  
+  .navbar-nav{
+    
+    list-style-type: none;
+    color: purple;
+    display: inline;
+    
+  }
+  #collapsibleNavbar{
+     position: absolute;
+     margin-left: 30%;
+     display: inline-block;
+     margin-top:1%;    
+  }
+  
+  .navbar-items{
+     /* padding-right: 2.5%; */
+    border-collapse: collapse;
+  color: #000000;
+  font-size: 20px;
+  
+  }
+  
+  /* .navbar-items:hover{
+   
+    /* transition: .5s ease;
+    border: 3px  solid;
+    border-collapse: collapse;
+    border-radius: 8px; 
+  
+  } */
+  .nav-item{
+    color: white;
+    margin-right: 35px;
+    font-size: 15px;
+  
+  }
+  
+  a{
+    color: white;
+  }
+  
+  .feature1{
+    width: 100%;
+    height: 120%;
+    margin-left: 50%;
+  }
+  
+  .feature1Txt{
+    float: clear;
+    z-index:1;
+    text-align: left;
+    font-size:20px;
+  }
+  
+  .feature2Txt{
+    float: clear;
+    z-index:1;
+    text-align: left;
+    font-size:20px;
+  }
+  
+  
+  .card{
+    border:none;
+  }
+  .a
+  { color: #000000; }
+  
+  .featureHeader{
+    text-align:center;
+    padding-bottom: 30px;
+  }
+  footer{
+  width: 100%;
+  margin-left:20px;
+  text-align:center;
+  color: #000000;
+  }
+  
+  .navbar-brand{
+      width:100px;
+      height:60px;
+      padding:0px;
+      margin:0px;
+  }
+  
+   .nav-link{
+     float:left;
+  } 
+  
+  
+  .nav-item{
+     float:left;
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+  
+    .nav-item{
+      color: white;
+      margin-right: 13px;
+      margin: 3px;
+      font-size: 14px;
+      /* border: 1px solid red; */
+      background-color: cornflowerblue;
+       opacity: 5.7; 
+      display: inline-flex;
+      padding: 2px;
+  }
+    
+     #collapsibleNavbar{
+      position: initial;
+      margin-left: 12%;
+      display: -webkit-box;
+      margin-top: 1%;
+     }
+     
+    }

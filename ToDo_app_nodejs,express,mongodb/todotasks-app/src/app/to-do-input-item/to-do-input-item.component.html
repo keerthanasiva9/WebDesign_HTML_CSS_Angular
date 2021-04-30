@@ -1,0 +1,16 @@
+<div class="item" [ngClass]="status ? 'striked' : 'nonstriked'">
+  <label class="container"
+    ><span class="taskContent">{{ content }}</span>
+    <input
+      type="checkbox"
+      [checked]="status"
+      (click)="updateToDoItemStatus()"
+    />
+    <span class="checkmark"></span>
+    <span class="dateTime" *ngIf="dueDate != null && dueTime != null">
+      - Due by {{ dueDate }} {{ dueTime }}</span
+    >
+  </label>
+  <i (click)="editToDoItem()" class="fas fa-edit editIcon"></i>
+  <i (click)="deleteToDoItem()" class="fa fa-trash trashIcon"></i>
+</div>

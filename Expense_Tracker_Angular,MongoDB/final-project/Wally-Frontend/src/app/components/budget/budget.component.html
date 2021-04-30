@@ -1,0 +1,128 @@
+<app-header></app-header>
+<app-subheader *ngIf = "loggedInStatus"></app-subheader>
+<div class = "container">
+   <div class= "row">
+      <div class = "sidebar col-xs-4">
+         <table class="table ">
+            <thead >
+                  <tr *ngIf = "mybudgetavailable">
+                        <th>Your Budget for {{monthName}} is </th>
+                        <th scope="col">${{mybudget}}</th>
+                     </tr>
+                     <tr *ngIf = "mybudgetavailable">
+                           <th>Budget Status </th>
+                           <th scope="col">{{overBudgetStatus}}</th>
+                        </tr>
+               <tr>
+                  <th scope="col">Total Monthly Expenditure </th>
+                  <th scope="col">${{totalExpenditure}}</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>{{this.categoryList[0]}}</td>
+                  <td>${{totalHome}}</td>
+               </tr>
+               <tr>
+                  <td>{{this.categoryList[1]}}</td>
+                  <td>${{totalAuto}}</td>
+               </tr>
+               <tr>
+                  <td>{{this.categoryList[2]}}</td>
+                  <td>${{totalBusiness}}</td>
+               </tr>
+               <tr>
+                  <td>{{this.categoryList[3]}}</td>
+                  <td>${{totalUtilities}}</td>
+               </tr>
+               <tr>
+                  <td>{{this.categoryList[4]}}</td>
+                  <td>${{totalEducation}}</td>
+               </tr>
+               <tr>
+                  <td>{{this.categoryList[5]}}</td>
+                  <td>${{totalEntertainment}}</td>
+               </tr>
+               <tr>
+                  <td>{{this.categoryList[6]}}</td>
+                  <td>${{totalFees}}</td>
+               </tr>
+               <tr>
+                  <td>{{this.categoryList[7]}}</td>
+                  <td>${{totalFood}}</td>
+               </tr>
+               <tr>
+                  <td>{{this.categoryList[8]}}</td>
+                  <td>${{totalHealth}}</td>
+               </tr>
+               <tr>
+                  <td>{{this.categoryList[9]}}</td>
+                  <td>${{totalShopping}}</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div  class = "billBar col-xs-8">
+          <div *ngIf = "!mybudgetavailable"  >
+            <h4> Add Your Budget</h4>
+            <form #f="ngForm" (ngSubmit)="addBudget(f.value)">
+              <div class="form-group textval">
+                <label for="month">Month</label><br>
+                <!-- <select name="profile" [(ngModel)]="bankName" required #profile="ngModel" (change)="onProfileChange()"> -->
+                <select id = "month" name="month" [(ngModel)]="month" class= "form-control textval" >
+                    <option value ="null" disabled>Select Month</option>
+                    <option  value ="January">January</option>
+                    <option  value ="February">February</option>
+                    <option  value ="March">March</option>
+                    <option  value ="April">April</option>
+                    <option  value ="May">May</option>
+                    <option  value ="June">June</option>
+                    <option  value ="July">July</option>
+                    <option  value ="August">August</option>
+                    <option  value ="September">September</option>
+                    <option  value ="October">October</option>
+                    <option  value ="November">November</option>
+                    <option  value ="December">December</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="budget">Budget Value</label>
+                <input class="form-control textval" type="budget" name="budget" id="budget" [(ngModel)]="budget"/>
+              </div>
+              <div>
+                <button type="submit" class="btn btn-primary btn-sm alignbtn">Add Budget</button>
+                <!-- <a [routerLink]="['/login']" class="btn btn-link">Login</a> -->
+              </div>
+            </form>
+          </div>
+
+      <!-- <div *ngIf = "mybudgetavailable" class = "formarea"  >
+         <div>
+               <label for="month">Your Budget for <b>{{monthName}}</b> is <b>{{mybudget}}</b></label><br>
+               <label>Budget Status <b>{{overBudgetStatus}}</b></label>
+         </div>
+      </div> -->
+      <div *ngIf = "wehaveCurrentMonthTransactions onegraphs">
+         <label><b>Category Wise Expenditure Distribution</b></label>
+          <canvas baseChart
+          [data]="pieChartData"
+          [labels]="pieChartLabels"
+          [chartType]="pieChartType"
+          [colors]="pieChartColor"
+          [options]="pieChartOptions"
+          ></canvas>
+      </div>
+      <br>
+      <div *ngIf = "mybudgetavailable onegraphs">
+         <label><b>Budget vs Expenditure Over Time</b></label>
+          <canvas baseChart
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [chartType]="barChartType"
+          [colors]="barChartColor"
+          ></canvas>
+      </div>
+    </div>
+   </div>
+</div>
+<app-footer></app-footer>

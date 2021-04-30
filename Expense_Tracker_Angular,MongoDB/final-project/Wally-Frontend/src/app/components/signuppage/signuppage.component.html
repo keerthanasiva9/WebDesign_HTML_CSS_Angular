@@ -1,0 +1,42 @@
+<!-- Header consisting of all the navigation items  -->
+<app-header></app-header>
+
+<!-- Background image  -->
+<div class="bg-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/background.jpg');">
+
+<div class="bg-image">
+  </div>
+
+<!--Signup form consisting of first name, last name, email and password-->>
+<div class ="bg-text" id ="container">
+
+<!--Form validation also done for all-->>
+<form #f="ngForm" (ngSubmit)="createUser(f.value)" class="label_userName">
+  <div class="form-group ctr">
+    <label for="firstName">First Name</label>
+    <input class="form-control" autocomplete="off" type="text"  name="firstName" id="firstName" [(ngModel)]="firstName"/>
+  </div>
+  <div class="form-group">
+    <label for="lastName">Last Name</label>
+    <input class="form-control" type="text" autocomplete="off" name="lastName" id="lastName" [(ngModel)]="lastName"/>
+  </div>
+  <div class="form-group">
+    <label for="userName">Email</label>
+    <input class="form-control" type="text" autocomplete="off" name="userName" id="userName" [(ngModel)]="userName"/>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input class="form-control" type="password" autocomplete="off" name="password" id="password" [(ngModel)]="password"/>
+  </div>
+  <br/>
+  <div class="btns">
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+    <a [routerLink]="['/login']" class="btn btn-link">Login</a>
+  </div>
+</form>
+</div>
+<br>
+<br>
+
+<!--Footer consisting of quick links and social media sites-->>
+<app-footer></app-footer>

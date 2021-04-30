@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!-- Fifth page of the form  -->
+<html>
+<head>
+<title>Social Security Card</title>
+</head>
+<body style="background-color:powderblue;">
+
+<h1 align="center">Application for a Social Security Card</h1>
+
+<!-- The form tag is used to collect user input -->
+<!-- The action attribute defines the action to be performed when the form is submitted. -->
+<form action="/action_page.php">
+  <p>
+  <a href="C:\Users\keert\OneDrive\Desktop\webdesign\formexp.html" 
+style="color: blue;">
+
+<!-- Used span tag to enlose the contents within a blox -->
+<span style="border:2px solid Tomato;"><strong>--> Click here to see how to fill the application!!!!!!</strong></span>
+</a>
+  </p>
+  <div style="border:2px solid tomato;">
+  <br>
+  1.NAME :
+  First Name:
+  
+  <!-- The input type text defines a one-line input field for text input -->
+  
+  <input type="text" name="firstname" value="">
+  Full Middle Name:
+  <input type="text" name="middlename" value="">
+  Last Name:
+  <input type="text" name="lastname" value="">
+  <br>
+  <br>
+  Full Name at birth if other than above : 
+  First Name:
+  <input type="text" name="ofirstname" value="">
+  Full Middle Name:
+  <input type="text" name="omiddlename" value="">
+  Last Name:
+  <input type="text" name="olastname" value="">
+  <br><br>
+  Other Names Used:
+   <input type="text" name="onfirstname" value="">
+  <br>
+  </div>
+  <br>
+  
+  <div style="border:2px solid tomato;">
+  <br>
+ 
+  <!-- Only allows the user to submit input which has characters A-Za-z0-9 and limits to only 9 characters to be entered -->
+  2.Social Security number previously assigned to the person : 
+  <input type="text" name="ssn" pattern="[A-Za-z0-9]{9}" title="Should be 9 digits">
+  <br>
+  </div>
+  <br>
+  
+  <fieldset>
+    <legend>3.Place Of Birth:</legend>
+	City:
+	<input type="text" name="city" value="">
+	<br><br>
+	State or Foreign Country:
+	<input type="text" name="stateorcountry" value="">
+	<br><br>
+	FCI(Office use only):
+	<input type="text" name="fci" value="">
+	
+  </fieldset>	
+  
+  <br>
+   <div style="border:2px solid tomato;">
+   <!-- Allows to user to enter the date manually and month and year using the dropbox -->
+	4.Date of Birth(dd/mm/yyyy) : <input type="text" name="date" value="">
+	<input type="month" name="bdaymonth">
+  </div>
+  <br>
+  
+<fieldset>
+<legend>5.Citizenship</legend>
+<!-- Allows the user to select one option -->
+<input type="radio" name="c1" value="uscitizen">U.S. Citizen
+<input type="radio" name="c2" value="legalalienatw">Legal Alien Allowed To Work 
+<input type="radio" name="c3" value="legalaliennatw">Legal Alien Not Allowed To Work
+<input type="radio" name="c4" value="other">Other
+<br>	
+</fieldset>
+  <br>
+  
+ <fieldset>
+ <legend>6.Ethnicity</legend>
+Are You Hispanic or Latino?(Your response is voluntary)
+<input type="radio" name="yes" value="yes">Yes
+<input type="radio" name="no" value="no">No 
+<br>	
+  </fieldset>
+  <br>
+  
+ <fieldset>
+ <legend>7.Race</legend>
+Select One or More(Your response is voluntary)
+<input type="checkbox" name="nh" value="nh">Native Hawaiian
+<input type="checkbox" name="ai" value="ai">American Indian
+<input type="checkbox" name="opi" value="opi">Other Pacific Islander
+<input type="checkbox" name="an" value="an">Alaska Native
+<input type="checkbox" name="baa" value="baa">Black/African American
+<input type="checkbox" name="w" value="w">White
+<input type="checkbox" name="a" value="a">Asian
+<br>	
+</fieldset>
+<br>
+
+ <fieldset>
+ <legend>8.Sex</legend>
+<input type="radio" name="yes" value="yes">Yes
+<input type="radio" name="no" value="no">No 
+<br>	
+  </fieldset>
+  <br>
+  
+ <div style="border:2px solid tomato;">
+ <fieldset>
+ <legend>9.A.Parent/Mother's Name at her birth:</legend>
+  First name:
+  <input type="text" name="mirstname" value="">
+  Full Middle Name:
+  <input type="text" name="middlename" value="">
+  Last name:
+  <input type="text" name="mltname" value=""> 
+<br>	
+  </fieldset>
+  <br>
+  
+  <fieldset>
+ <legend>9.B.Parent/Mother's Social Security Number</legend>
+  <input type="text" name="ssn" pattern="[A-Za-z0-9]{9}" title="Should be 9 digits">
+<input type="checkbox" name="unknown" value="unknown">Unknown 
+<br>	
+  </fieldset>
+  <br> 
+  </div>
+  <br> 
+  
+  <div style="border:2px solid tomato;">
+ <fieldset>
+ <legend>10.A.Parent/Father's Name:</legend>
+  First name:
+  <input type="text" name="ffirstname" value="">
+  Full Middle Name:
+  <input type="text" name="fmiddlename" value="">
+  Last name:
+  <input type="text" name="flastname" value=""> 
+<br>	
+  </fieldset>
+  <br>
+  
+  <fieldset>
+ <legend>10.B.Parent/Father's Social Security Number</legend>
+  <input type="text" name="ssn" pattern="[A-Za-z0-9]{9}" title="Should be 9 digits">
+<input type="checkbox" name="unknown" value="unknown">Unknown 
+<br>	
+  </fieldset>
+  <br> 
+  </div>
+  <br>
+
+ <div style="border:2px solid tomato;">
+11. Has the person listed in item 1 or anyone acting on his/her behalf ever filed for or received a Social Security number card before?
+ <br><br>
+ <input type="checkbox" name="yes" value="yes">Yes(If "yes" answer qustions 12-13)
+ <input type="checkbox" name="no" value="no">No
+ <input type="checkbox" name="unknown" value="unknown">Don't Know(If "dont know skip to question 14.")
+ </div>
+ <br>
+ 
+   <div style="border:2px solid tomato;">
+  <br>
+  12.Name shown on the most recent Social Security crad issued for the person listed in item 1
+  <br><br>
+  First name:
+  <input type="text" name="firstname" value="">
+  Full Middle Name:
+  <input type="text" name="middlename" value="">
+  Last name:
+  <input type="text" name="lastname" value="">
+  <br>
+  </div>
+  
+    <br>
+   <div style="border:2px solid tomato;">
+	13.Enter any different date of birth if used on an earlier application for a card(dd/mm/yyyy) : <input type="text" name="date" value="">
+	<input type="month" name="bdaymonth">
+  </div>
+  <br>
+
+  <br>
+   <div style="border:2px solid tomato;">
+	14.Today's Date(dd/mm/yyyy) : <input type="text" name="date" value="">
+	<input type="month" name="bdaymonth">
+  </div>
+  <br>
+  
+    <fieldset>
+ <legend>15. Daytime Phone number</legend>
+ Area Code:
+<input type="text" name="areacode" value="">
+<br>	<br>
+Number:
+ <input type="text" name="phonenum" pattern="[0-9]{10}" title="Should be 10 digits">
+<br>
+  </fieldset>
+<br>
+
+<fieldset>
+ <legend>16.Mailing Address</legend>
+  Street Address,Apt No, PO Box, Rural Route No.:
+  <input type="text" name="streetaddr" value="">
+  <br><br>
+  City:
+  <input type="text" name="city" value="">
+  State/Foreign Country:
+  <input type="text" name="sfcountry" value="">
+  Zip Code:
+  <input type="text" name="zip" value=""> 
+<br>	
+  </fieldset>
+  <br>
+ 
+I declare under penalty of perjury that I have examined all the information on this form, and on any accompanying statements or forms, and it is true and correct to the best to my knowledge.
+<fieldset>
+<legend>17.YOUR SIGNATURE</legend>
+<br>
+<br>
+</fieldset>
+<br>
+
+<div style="border:2px solid tomato;">
+18. Your relationship to the person in item 1 is :
+ <br><br>
+ <input type="checkbox" name="self" value="self">Self
+ <input type="checkbox" name="nor" value="nor">Natural or Adoptive Parent
+ <input type="checkbox" name="legal" value="legal">Legal Guardian
+  <input type="checkbox" name="other" value="other">Other
+  Specify : <input type="text" name="specify" value="">
+  
+ </div>
+ <br>
+ <br>
+ 
+DO NOT WRITE BELOW THIS LINE(FOR SSA USE ONLY) 
+<!-- Used hr tag to insert a horizontal line -->
+<hr>
+<div style="border:2px solid tomato;">
+
+<!-- Used a pre tag which is used to keep the spaces -->
+<pre>
+NPN                      DOC              NTI                CAN               ITV
+<br>
+PBC             EVI         EVA           EVC        PRA      NWR       DNR         UNIT
+<br>
+<hr>
+EVIDENCE SUBMITTED
+<br>
+<br>
+<hr>
+SIGNATURE AND TITLE OF EMPLOYEE(S) REVIEWING EVIDENE AND/OR CONDUCTING INTERVIEW
+<BR>
+Date                    
+<br>
+<hr>
+DCL                                                    DATE                               
+</pre>
+</div>
+
+<br>
+<!-- The input type = submit defines a button for submitting the form data to a form-handler -->
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>

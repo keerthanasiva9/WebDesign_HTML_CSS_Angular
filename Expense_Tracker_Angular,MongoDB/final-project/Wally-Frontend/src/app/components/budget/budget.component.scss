@@ -1,0 +1,89 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+.sidebar{
+    width:30%;
+    height:100%;
+    border: 1px solid rgb(235, 230, 230);
+    margin-top:1%;
+    margin-bottom:1%;
+    font-size:14px;
+}
+
+.sec1{
+    background-color: rgb(234, 236, 238);
+    width:90%;
+    padding: 1%;
+
+}
+
+ .table a{
+    display:block;
+    text-decoration:none;
+}
+
+.gear{
+    width:100%;
+}
+
+.modal-backdrop.fade
+   {
+     opacity: 0.5;
+   }
+   .modal-open .modal
+   {
+     opacity: 1;
+   }
+
+   .dashing{
+     background-color: rgb(248, 245, 238);
+   }
+
+   .new{
+    font-size: 12px;
+    text-align: left;
+
+   }
+
+  .billBar{
+    width :60%;
+    float:left;
+    margin-top:1%;
+    font-size: 14px;
+    align-content:center;
+    margin-left:20px;
+  }
+
+  h4{
+      text-align: center;
+  }
+
+  .textval{
+      font-size:14px;
+  }
+
+  .alignbtn{
+      margin-left: 40%;
+  }
+
+  .formarea{
+    width :60%;
+    border: 1px solid grey;
+  }
+
+  thead{
+    background-color: rgb(240, 240, 240);
+  }
+
+  tbody tr + td{
+    padding-left:5px;
+  }
+  .twographs{
+    width :100%;
+    border: 1px solid rgba(99, 97, 97, 0.11);
+    margin-left:2px;
+  }
+  .onegraphs{
+    width :100%;
+    border: 1px solid rgba(99, 97, 97, 0.11);
+    margin-left:2px;
+    margin-top:20px;
+  }

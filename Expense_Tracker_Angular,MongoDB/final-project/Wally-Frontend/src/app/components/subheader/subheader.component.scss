@@ -1,0 +1,98 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+ .bg-light {
+   background-color: rgb(243, 110, 77) !important;
+  }
+
+  .navbar-nav{
+
+    list-style-type: none;
+    color: #000000;
+    display: inline;
+  }
+  #collapsibleNavbar{
+
+     margin-left: 30%;
+     display: inline;
+
+  }
+
+  .navbar-items{
+
+    border-collapse: collapse;
+    color: #000000;
+    font-size: 20px;
+
+
+  }
+
+
+
+  .nav-item{
+    color: white;
+    margin-right: 44px;
+    font-size: 15px;
+
+  }
+
+  a{
+    color: rgb(0, 0, 0);
+  }
+
+  .feature1{
+    width: 100%;
+    height: 120%;
+    margin-left: 50%;
+  }
+
+  .feature1Txt{
+    float: clear;
+    z-index:1;
+    text-align: left;
+    font-size:20px;
+  }
+
+  .feature2Txt{
+    float: clear;
+    z-index:1;
+    text-align: left;
+    font-size:20px;
+  }
+
+
+  .card{
+    border:none;
+  }
+  .a
+  { color: #000000; }
+
+  .featureHeader{
+    text-align:center;
+    padding-bottom: 30px;
+  }
+  footer{
+  width: 100%;
+  margin-left:20px;
+  text-align:center;
+  color: #000000;
+  }
+
+  .navbar-brand{
+      width:100px;
+      height:60px;
+      padding:0px;
+      margin:0px;
+  }
+
+  /* .nav-link{
+     float:left;
+  } */
+
+
+  .nav-item{
+     float:left;
+  }
+
+  .fav{
+    width:20px;
+    height:20px;
+  }

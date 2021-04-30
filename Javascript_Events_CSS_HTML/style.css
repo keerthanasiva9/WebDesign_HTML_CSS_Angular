@@ -1,0 +1,101 @@
+/* Container for the text area with the toolbar */
+container1 {
+    width:45%;
+    height:500px;
+    float:right;
+    border-radius: 5px;
+    background-color:#950740;
+    padding-top: 25px;
+  padding-right: 23px;
+  padding-bottom: 25px;
+  padding-left: 23px;
+  position: absolute;
+  top: 70%;
+  left: 45%;
+  transform: translate(-30%, -60%);
+  }
+
+.body1{
+    background-color: #41B3A3;
+    background-image: url("night.jpeg");
+
+}
+
+/* Text area*/
+.text-editor{
+  border: 10px;
+  width: 100%;
+  height: 200px;
+  background-color:white;
+}
+
+/* Container for the text area*/
+  .editorbox{
+    width:93%;
+    height:10px;
+    float:right;
+    border-radius: 5px;
+    background-color:#240090;
+    padding-top: 25px;
+  padding-right: 23px;
+  padding-bottom: 25px;
+  padding-left: 23px;
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  transform: translate(-30%, -60%);
+  }
+
+  .h1{
+    text-align: center;
+    color:#6F2232;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+
+  .textbox {
+    float: left;
+    
+    margin-top: 10px;
+    width: 100%;
+    height: 80%;
+    margin-top: 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    .textbox {
+        width:35%;
+        height:600px;
+      margin-top: 0;
+    }
+  }
+
+  /* Bold */
+  .text-bold {
+    font-weight: bold;
+  }
+
+  /* Italics*/
+  .text-italic {
+    font-style: italic;
+  }
+
+/* Underline*/
+ .text-underline {
+    text-decoration: underline;
+  }
+
+  .text-left{
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .text-justify {
+    text-align: justify;
+  }
+
+  .text-unbold {
+    font-style: normal;
+  }

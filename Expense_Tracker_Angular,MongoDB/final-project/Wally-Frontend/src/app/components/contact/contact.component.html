@@ -1,0 +1,78 @@
+<app-header></app-header>
+<div class="bg-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/background.jpg');">
+
+ <!-- Contact Us Section -->
+    <section class="Material-contact-section section-padding section-dark">
+      <div class="container">
+          <div class="row">
+              <!-- Section Title -->
+              <div class="col-md-12 " >
+                  <h1 class="section-title">Love to Hear From You</h1>
+              </div>
+          </div>
+          <div class="row">
+              <!-- Section Title -->
+              <div class="col-md-6 mt-3 contact-widget-section2 " >
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content.</p>
+
+                <div>
+                 Company:  <a href="#">Wally</a>
+                </div>
+                <div>
+                 Address: <a href="#">360 Huntington Ave, Boston, MA 02115</a>
+                </div>
+                <div>
+                  Phone:  <a href="#">+ 879-790-7979</a>
+                </div>
+
+                <div>
+                  Website:  <a href="https://www.mint.com/">www.wally.com</a>
+                </div>
+                <div>
+                   Program: <a href="#">Mon to Sat: 09:30 AM - 10.30 PM</a>
+                </div>
+              </div>
+              <!-- contact form -->
+              <div class="col-md-6" >
+                  <form ngNativeValidate class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                      <!-- Name -->
+                      <div class="form-group label-floating">
+                        <label class="control-label" for="name"><b>Name :</b></label>
+                        <input class="form-control" id="name" type="text" autocomplete="off" name="name" required data-error="Please enter your name">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- email -->
+                      <div class="form-group label-floating">
+                        <label class="control-label" for="email"><b>Email :</b></label>
+                        <input class="form-control" id="email" type="email" autocomplete="off" name="email" required data-error="Please enter your Email">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Subject -->
+                      <div class="form-group label-floating">
+                        <label class="control-label"><b>Subject :</b></label>
+                        <input class="form-control" id="msg_subject" autocomplete="off" type="text" name="subject" required data-error="Please enter your message subject">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Message -->
+                      <div class="form-group label-floating">
+                          <label for="message" class="control-label"><b>Message :</b></label>
+                          <textarea class="form-control" rows="3" autocomplete="off" id="message" name="message" required data-error="Write your message"></textarea>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Form Submit -->
+                      <div class="form-submit mt-5">
+                          <button class="btn btn-primary" type="submit" id="form-submit" ><i class="material-icons mdi mdi-message-outline"></i> Send Message</button>
+                          <div id="msgSubmit" class="h3 text-center hidden"></div>
+                          <div class="clearfix"></div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div class="mapouter"><div class="gmap_canvas">
+          <iframe width="777" height="505" id="gmap_canvas" src="https://maps.google.com/maps?q=northeastern%20university&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+        </iframe>
+    </div>
+    </div>
+    </section>
+    <app-footer></app-footer>

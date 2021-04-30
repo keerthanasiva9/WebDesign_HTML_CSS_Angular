@@ -1,0 +1,18 @@
+<app-header></app-header>
+<br><br><br><br>
+
+<div class="container">
+    <form #RequestResetForm="ngForm" (ngSubmit)="OnSubmit()"> 
+        <label for="Email_Id">Enter Email Id</label>
+        <input class="form-control" autocomplete="off" type="email" name="email" id="Email_Id"
+            placeholder="Enter Email ID" [(ngModel)]="form.email" required />
+</form>
+</div>
+<br><br>
+<div class="btns">
+        <button type="submit" class="btn btn-primary" (click)="OnSubmit">Send Password Reset Link</button>
+       </div>
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+<app-footer></app-footer>

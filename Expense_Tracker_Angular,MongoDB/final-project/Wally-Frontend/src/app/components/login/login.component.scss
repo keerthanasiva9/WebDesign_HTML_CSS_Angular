@@ -1,0 +1,56 @@
+#container{
+  margin-left: 30%;
+  margin-top: 20%;
+  height:400px; 
+  background-color: rgb(192, 69, 67);
+ }
+.bg-image{
+
+    height:650px; 
+    width: 1500px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.bg-text {
+    font-weight: bold;
+    position: absolute;
+    margin-top: 12%;
+    top: 25%;
+    left: 20%; 
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 35%;
+    padding: 20px;
+    text-align: center;
+    font-weight: lighter;
+
+    }
+
+  .label_userName{
+    text-align: left;
+    margin-top:2%;
+    margin-left: 10%;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:whitesmoke;
+  }
+
+  
+  .form-control {
+    width: 95% !important;
+
+}
+
+.btn{
+  margin-left: 15%;
+}
+
+.reset
+{
+  color: maroon;
+}
